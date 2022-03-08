@@ -33,7 +33,7 @@ body{
     -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
 
     /* Text color gradient properties */
-    background: -webkit-linear-gradient(45deg, skyblue, mediumpurple);
+    background: -webkit-linear-gradient(45deg, blue, mediumpurple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
