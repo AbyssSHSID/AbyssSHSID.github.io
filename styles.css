@@ -9,21 +9,27 @@
 }
 
 body{
-    background: #5C258D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: white;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, white, white);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, white, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .Main{
     margin-top: 10px;
     text-align: center;
     color: white;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(sandybrown, mediumpurple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .center{
     border: 5px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .copy{
@@ -32,7 +38,12 @@ body{
     bottom: 0;
     text-align: center;
     width: 100%;
-    color: white;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, red, orange, yellow, greenyellow, aqua, skyblue, darkblue, mediumpurple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .wrapper{
@@ -44,10 +55,10 @@ body{
     width: 500px;
     height: 400px;
     margin: 30px auto 0;
-    background: #f94f62;
+    background: #808080;
     padding: 25px 40px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .lboard_section .lboard_tabs ul{
@@ -58,7 +69,7 @@ body{
     margin-right: 50px;
     font-size: 18px;
     font-weight: 600;
-    color: #3a3d51;
+    color: greenyellow;
     cursor: pointer;
 }
 
@@ -71,7 +82,7 @@ body{
     position: absolute;
     top: 70px;
     left: 40px;
-    background: #ffd300;
+    background: black;
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -85,7 +96,7 @@ body{
     display: flex;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #ffe773;
+    border-bottom: 1px solid greenyellow;
 }
 
 .lboard_wrap .lboard_mem:first-child{
@@ -103,7 +114,8 @@ body{
 }
 
 .lboard_wrap .lboard_mem .name_bar p{
-    color: #3a3d51;
+/*    color: #3a3d51;*/
+    color: white;
 }
 
 .lboard_wrap .lboard_mem .name_bar p span{
@@ -112,13 +124,14 @@ body{
 
 .lboard_wrap .lboard_mem .points{
     width: 100px;
-    color: #3a3d51;
+/*    color: #3a3d51;*/
+    color: white;
 }
 
 .lboard_wrap .lboard_mem .name_bar .bar_wrap{
     width: 100%;
     height: 5px;
-    background: #d5b000;
+    background: dimgray;
     margin-top: 5px;
     border-radius: 5px;
     position: relative;
@@ -130,8 +143,91 @@ body{
     top: 0;
     left: 0;
     height: 5px;
-    background: #fff;
+/*    background: greenyellow; */
+    background: -webkit-linear-gradient(45deg, deeppink, rebeccapurple);
     border-radius: 5px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.lboard_wrap .lboard_mem .name_bar .dev{
+    color: aqua;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, aqua, whitesmoke);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lboard_wrap .lboard_mem .name_bar .gm{
+    color: darkgreen;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, green, darkgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lboard_wrap .lboard_mem .name_bar .yt{
+    color: red;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, red, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l3p{
+    color: goldenrod;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l2p{
+    color: aqua;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l1p{
+    color: greenyellow;
+}
+
+.lboard_wrap .lboard_mem .name_bar .devg{
+    color: aqua;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, aqua, whitesmoke);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lboard_wrap .lboard_mem .name_bar .teag{
+    color: red;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, red, darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l3g{
+    color: yellow;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l2g{
+    color: forestgreen;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l1g{
+    color: cadetblue;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l0p{
+    color: white;
+}
+
+.lboard_wrap .lboard_mem .name_bar .l0g{
+    color: white;
 }
