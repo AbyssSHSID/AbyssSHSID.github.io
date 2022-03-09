@@ -39,16 +39,17 @@ body{
 }
 }
 
-.copy{
+.rights{
     border: 5px;
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
+    color: white;
     -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
 
     /* Text color gradient properties */
-    background: -webkit-linear-gradient(45deg, red, orange, yellow, greenyellow, aqua, skyblue, darkblue, mediumpurple);
+    background: -webkit-linear-gradient(45deg, orange, purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -62,7 +63,7 @@ body{
     width: 500px;
     height: 400px;
     margin: 30px auto 0;
-    background: #808080;
+    background: #575757;
     padding: 25px 40px;
     position: relative;
     border-radius: 10px;
@@ -113,6 +114,15 @@ body{
 .lboard_wrap .lboard_mem:last-child{
     padding-bottom: 0;
     border-bottom: 0;
+}
+
+.lboard_wrap .lboard_mem .img{
+    width: 50px;
+}
+
+.lboard_wrap .lboard_mem img{
+    display: block;
+    width: 100%;
 }
 
 .lboard_wrap .lboard_mem .name_bar{
@@ -210,11 +220,11 @@ body{
 }
 
 .lboard_wrap .lboard_mem .name_bar .teag{
-    color: red;
+    color: green;
     -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
 
     /* Text color gradient properties */
-    background: -webkit-linear-gradient(45deg, red, darkred);
+    background: -webkit-linear-gradient(45deg, green, darkgreen);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -237,4 +247,24 @@ body{
 
 .lboard_wrap .lboard_mem .name_bar .l0g{
     color: white;
+}
+
+.lboard_wrap .lboard_mem .name_bar .asb{
+    color: pink;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, pink, plum);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lboard_wrap .lboard_mem .name_bar .abuse{
+    color: darkred;
+    -webkit-text-fill-color: transparent; /* Webkit Disable Fallback */
+
+    /* Text color gradient properties */
+    background: -webkit-linear-gradient(45deg, red, darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
