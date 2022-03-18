@@ -118,6 +118,7 @@ body{
 
 .lboard_wrap .lboard_mem .img{
     width: 50px;
+    border-radius: 50%;
 }
 
 .lboard_wrap .lboard_mem img{
